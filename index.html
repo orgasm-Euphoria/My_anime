@@ -28,3 +28,70 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 </main>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>مشاهدة الفيديو</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    @media (min-width: 600px) {
+      .video-container {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="video-container">
+    <iframe
+      src="https://drive.google.com/file/d/1TjqWQSWNoi9j3MZRS0mYR2B2E-utIsWt/preview"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+  </html>
